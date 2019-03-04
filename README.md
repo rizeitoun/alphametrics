@@ -1,10 +1,10 @@
 # Alphametrics Solver in Python
-#### This is a binary search tree exercise from the Python track of exercism.io.  Goal was to make a python script to efficiently store and retrieve sorted data using a binary tree format to avoid array limitations.  
+#### This solves an alphametrics puzzle where you have several words that are added to equal a new word.  Each letter represents a number [0-9], numbers only appear once and leading numbers cannot be 0.  This is solved in a brute force manner using a recursive function. 
 
 #### Implementation code is in alphametrics.py
 #### Example tests from exercism where showing input and output as first and second parameters into assertEqual.
 ```
-            solve("AND + A + STRONG + OFFENSE + AS + A + GOOD == DEFENSE"),
+            assertEqual(solve("AND + A + STRONG + OFFENSE + AS + A + GOOD == DEFENSE"),
             {"A": 5,
              "D": 3,
              "E": 4,
